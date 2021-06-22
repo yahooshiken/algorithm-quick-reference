@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "__config": "cpp",
+    "list": "cpp",
+    "algorithm": "cpp",
+    "vector": "cpp",
+    "limits": "cpp",
+    "cassert": "cpp",
+    "utility": "cpp",
+    "ostream": "cpp"
+  }
+}
