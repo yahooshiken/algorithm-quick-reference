@@ -1,5 +1,6 @@
 #include <cassert>
 #include <iostream>
+#include <limits>
 
 #include "bfs.h"
 
@@ -27,6 +28,17 @@ int main(int argc, char const *argv[]) {
   cout << "i: dist[i], pred[i]" << endl;
   for (int i = 0; i < n; i++) {
     cout << i << ": " << dist[i] << ", " << pred[i] << endl;
+  }
+
+  int expectedDist[] = {0, 1, numeric_limits<int>::max(),
+                        1, 2, numeric_limits<int>::max()};
+  for (int i = 0; i < n; i++) {
+    assert(expectedDist[i] == dist[i]);
+  }
+
+  int expectedPred[] = {-1, 0, -1, 0, 1, -1};
+  for (int i = 0; i < n; i++) {
+    assert(expectedPred[i] == pred[i]);
   }
 
   cout << "Passed test" << endl;

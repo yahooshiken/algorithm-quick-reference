@@ -1,6 +1,9 @@
+#include <iostream>
+
 #include "bfs.h"
 
-void bfsSearch(Graph const &graph, int s, vector<int> &dist, vector<int> pred) {
+void bfsSearch(Graph const &graph, int s, vector<int> &dist,
+               vector<int> &pred) {
   const int n = graph.numVertices();
   pred.assign(n, -1);
   dist.assign(n, numeric_limits<int>::max());

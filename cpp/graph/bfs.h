@@ -5,6 +5,6 @@
 
 #include "graph.h"
 
-void bfsSearch(Graph const &graph, int s, vector<int> &dist, vector<int> pred);
+void bfsSearch(Graph const &graph, int s, vector<int> &dist, vector<int> &pred);
 
 #endif
