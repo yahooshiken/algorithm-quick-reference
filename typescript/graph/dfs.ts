@@ -1,13 +1,13 @@
 import Graph from "./graph.ts";
 
-const vertixColor = ["White", "Gray", "Black"] as const;
-type VertixColor = typeof vertixColor[number];
+const vertexColor = ["White", "Gray", "Black"] as const;
+type VertexColor = typeof vertexColor[number];
 
 const dfsVisit = (
   graph: Graph,
   u: number,
   pred: number[],
-  color: VertixColor[]
+  color: VertexColor[]
 ) => {
   color[u] = "Gray";
 
@@ -23,7 +23,7 @@ const dfsVisit = (
 
 const dfsSearch = (graph: Graph, start: number): number[] => {
   const n = graph.getVerticesNum();
-  const color: VertixColor[] = Array(n).fill("White");
+  const color: VertexColor[] = Array(n).fill("White");
   const pred: number[] = Array(n).fill(-1);
 
   dfsVisit(graph, start, pred, color);
