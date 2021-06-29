@@ -57,7 +57,7 @@ class Graph implements IGraph {
 
     if (!this.directed) {
       const edgeR: Vertex = [u, w];
-      this.vertices[u] = [edgeR, ...this.vertices[u]];
+      this.vertices[v] = [edgeR, ...this.vertices[v]];
     }
   }
 }
