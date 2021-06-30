@@ -6,4 +6,5 @@
 |---|---|---|
 |DFS (Graph)|✅|✅|
 |BFS (Graph)|✅|✅|
-|Dijkstra|✅|✅|
+|Dijkstra's|✅|✅|
+|Jarník-Prim's|✅|✅
