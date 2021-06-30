@@ -22,5 +22,9 @@
     "iostream": "cpp",
     "queue": "cpp"
   },
-  "deno.enable": true
+  "deno.enable": true,
+  "python.pythonPath": "${workspaceRoot}/python/.venv/bin/python",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black"
 }
