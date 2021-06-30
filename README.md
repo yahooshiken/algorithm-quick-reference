@@ -2,9 +2,9 @@
 
 ## Implementation Status
 
-||C++|TypeScript|
-|---|---|---|
-|DFS (Graph)|✅|✅|
-|BFS (Graph)|✅|✅|
-|Dijkstra's|✅|✅|
-|Jarník-Prim's|✅|✅
+||C++|TypeScript|Python|
+|---|---|---|---|
+|DFS (Graph)|✅|✅|✅|
+|BFS (Graph)|✅|✅||
+|Dijkstra's|✅|✅||
+|Jarník-Prim's|✅|✅||
