@@ -7,6 +7,10 @@
 - cmake
 - clang-format
 
+ ```sh
+ $ brew install cmake clang-format
+ ```
+
 ```sh
 $ mkdir build && cd build
 $ cmake ..
