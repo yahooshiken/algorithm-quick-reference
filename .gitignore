@@ -5,3 +5,7 @@ cpp/**/build/*
 python/.venv/*
 python/**/__pycache__/*
 python/**/.pytest_cache/*
+
+java/**/*.class
+java/**/*.log
+java/**/*.jar
