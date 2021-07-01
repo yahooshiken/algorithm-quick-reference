@@ -9,3 +9,5 @@ python/**/.pytest_cache/*
 java/**/*.class
 java/**/*.log
 java/**/*.jar
+
+ruby/**/vendor/bundle
