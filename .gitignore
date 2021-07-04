@@ -11,3 +11,6 @@ java/**/*.log
 java/**/*.jar
 
 ruby/**/vendor/bundle
+
+rust/**/target
+rust/**/debug
