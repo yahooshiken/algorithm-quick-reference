@@ -1,5 +1,3 @@
-use std::convert::TryInto;
-
 type Vertex = (usize, isize);
 type VertexList = Vec<Vertex>;
 
@@ -25,7 +23,7 @@ impl GraphTrait for Graph {
     Graph {
       n: n,
       directed: directed,
-      vertices: vec![vec![]; n.try_into().unwrap()],
+      vertices: vec![vec![]; n],
     }
   }
 
