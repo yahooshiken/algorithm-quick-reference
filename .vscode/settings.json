@@ -27,5 +27,10 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.formatting.provider": "black",
-  "java.configuration.updateBuildConfiguration": "automatic"
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "ruby.intellisense": "rubyLocate",
+  "files.watcherExclude": {
+    "**/target": true
+  },
+  "elixir.projectPath": "./elixir"
 }
