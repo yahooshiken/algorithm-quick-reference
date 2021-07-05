@@ -14,3 +14,17 @@ ruby/**/vendor/bundle
 
 rust/**/target
 rust/**/debug
+
+scala/**/dist/*
+scala/**/target/
+scala/**/lib_managed/
+scala/**/src_managed/
+scala/**/project/boot/
+scala/**/project/plugins/project/
+scala/**/.history
+scala/**/.cache
+scala/**/.lib/
+scala/**/.bloop
+scala/**/.metals
+scala/**/metals.sbt
+
