@@ -48,7 +48,7 @@ template <typename T> void LinkedList<T>::push(T val) {
 }
 
 template <typename T> T LinkedList<T>::pop() {
-  if (tail == NULL) {
+  if (head == NULL) {
     throw "No Such Element Exception: Nothing in List";
   }
 
