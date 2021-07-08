@@ -20,7 +20,6 @@ public:
 
   void insertItem(T key);
   void deleteItem(T key);
-  int search();
 
   string toString();
 };
@@ -33,15 +32,15 @@ template <typename T> void HashTable<T>::insertItem(T key) {
 template <typename T> void HashTable<T>::deleteItem(T key) {
   int index = hashFunc(key);
 
-  list<int>::iterator i;
-  for (i = table[index].begin(); i != table[index].end(); i++) {
-    if (*i == key) {
+  list<int>::iterator it;
+  for (it = table[index].begin(); it != table[index].end(); it++) {
+    if (*it == key) {
       break;
     }
   }
 
-  if (i != table[index].end()) {
-    table[index].erase(i);
+  if (it != table[index].end()) {
+    table[index].erase(it);
   }
 }
 
@@ -50,8 +49,8 @@ template <typename T> string HashTable<T>::toString() {
 
   for (int i = 0; i < bucket; i++) {
     ss << i << ": ";
-    for (auto x : table[i]) {
-      ss << "-> " << x << ' ';
+    for (T val : table[i]) {
+      ss << "-> " << val << ' ';
     }
     ss << endl;
   }
