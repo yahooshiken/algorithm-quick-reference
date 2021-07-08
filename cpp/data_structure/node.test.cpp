@@ -12,7 +12,7 @@ int main() {
   assert(node.getValue() == 100);
   assert(node.toString() == "Node[100]");
 
-  node.setNext(node2);
+  node.setNext(&node2);
   assert(node.getNext()->getValue() == 101);
 
   cout << "Test passed" << endl;
