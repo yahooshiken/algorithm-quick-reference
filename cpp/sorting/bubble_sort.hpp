@@ -1,9 +1,11 @@
 #include <sstream>
 #include <string>
 
+#include "sort.hpp"
+
 using namespace std;
 
-template <typename T> class BubbleSort {
+template <typename T> class BubbleSort : public Sort<T> {
 public:
   BubbleSort(){};
   ~BubbleSort(){};
