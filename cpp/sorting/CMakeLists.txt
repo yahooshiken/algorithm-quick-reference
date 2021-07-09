@@ -1,4 +1,6 @@
+set(CMAKE_CXX_STANDARD 20)
 cmake_minimum_required(VERSION 3.20)
 project(sorting CXX)
 add_executable(testing_bubble_sort bubble_sort.test.cpp)
 add_executable(testing_selection_sort selection_sort.test.cpp)
+add_executable(testing_insertion_sort insertion_sort.test.cpp)

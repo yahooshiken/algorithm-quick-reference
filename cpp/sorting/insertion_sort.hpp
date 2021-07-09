@@ -6,12 +6,12 @@ public:
   InsertionSort(){};
   ~InsertionSort(){};
 
-  T *sort(T *arr, const int length, SortType type = asc);
-  string toString(T *arr, const int length);
+  const T *sort(T *arr, const int length, SortType type = asc) const;
+  const string toString(T *arr, const int length) const;
 };
 
 template <typename T>
-T *InsertionSort<T>::sort(T *arr, const int length, SortType type) {
+const T *InsertionSort<T>::sort(T *arr, const int length, SortType type) const {
   for (int i = 1; i < length; i++) {
     int j = i;
     while (j >= 1 && Sort<T>::compare(&arr[j - 1], &arr[j], type)) {
@@ -24,6 +24,6 @@ T *InsertionSort<T>::sort(T *arr, const int length, SortType type) {
 }
 
 template <typename T>
-string InsertionSort<T>::toString(T *arr, const int length) {
+const string InsertionSort<T>::toString(T *arr, const int length) const {
   return Sort<T>::toString(arr, length);
 };

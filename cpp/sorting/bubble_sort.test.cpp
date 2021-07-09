@@ -2,6 +2,7 @@
 #include <iostream>
 
 #include "bubble_sort.hpp"
+#include "perf_measurer.hpp"
 
 using namespace std;
 
@@ -12,12 +13,17 @@ int main() {
 
   cout << "Before: " << bubbleSort->toString(arr, length) << endl;
   bubbleSort->sort(arr, length);
-  cout << "After: " << bubbleSort->toString(arr, length) << endl;
+  cout << "After: " << bubbleSort->toString(arr, length) << endl << endl;
 
   int expected[] = {32, 34, 45, 67, 76, 78};
   for (int i = 0; i < length; i++) {
     assert(arr[i] == expected[i]);
   }
+
+  PerfMeasurer<int> *perfMeasurer =
+      new PerfMeasurer<int>((const Sort<int> &)BubbleSort<int>());
+
+  cout << perfMeasurer->reportPerf() << endl;
 
   cout << "Test passed" << endl;
 

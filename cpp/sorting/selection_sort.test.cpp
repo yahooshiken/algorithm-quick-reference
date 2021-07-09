@@ -1,5 +1,7 @@
+#include <cassert>
 #include <iostream>
 
+#include "perf_measurer.hpp"
 #include "selection_sort.hpp"
 
 using namespace std;
@@ -17,6 +19,11 @@ int main() {
   for (int i = 0; i < length; i++) {
     assert(arr[i] == expected[i]);
   }
+
+  PerfMeasurer<int> *perfMeasurer =
+      new PerfMeasurer<int>((const Sort<int> &)SelectionSort<int>());
+
+  cout << perfMeasurer->reportPerf() << endl;
 
   cout << "Test passed" << endl;
 

@@ -1,6 +1,8 @@
+#include <cassert>
 #include <iostream>
 
 #include "insertion_sort.hpp"
+#include "perf_measurer.hpp"
 
 using namespace std;
 
@@ -17,6 +19,11 @@ int main(int argc, char const *argv[]) {
   for (int i = 0; i < length; i++) {
     assert(arr[i] == expected[i]);
   }
+
+  PerfMeasurer<int> *perfMeasurer =
+      new PerfMeasurer<int>((const Sort<int> &)InsertionSort<int>());
+
+  cout << perfMeasurer->reportPerf() << endl;
 
   cout << "Test passed" << endl;
 

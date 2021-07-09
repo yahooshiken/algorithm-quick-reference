@@ -9,12 +9,12 @@ public:
   SelectionSort(){};
   ~SelectionSort(){};
 
-  T *sort(T *arr, const int length, SortType type = asc);
-  string toString(T *arr, const int length);
+  const T *sort(T *arr, const int length, SortType type = asc) const;
+  const string toString(T *arr, const int length) const;
 };
 
 template <typename T>
-T *SelectionSort<T>::sort(T *arr, const int length, SortType type) {
+const T *SelectionSort<T>::sort(T *arr, const int length, SortType type) const {
   for (int i = 0; i < length - 1; i++) {
     int minIndex = i;
     for (int j = i + 1; j < length; j++) {
@@ -29,6 +29,6 @@ T *SelectionSort<T>::sort(T *arr, const int length, SortType type) {
 }
 
 template <typename T>
-string SelectionSort<T>::toString(T *arr, const int length) {
+const string SelectionSort<T>::toString(T *arr, const int length) const {
   return Sort<T>::toString(arr, length);
 };

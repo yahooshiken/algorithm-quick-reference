@@ -10,12 +10,12 @@ public:
   BubbleSort(){};
   ~BubbleSort(){};
 
-  T *sort(T *arr, const int length, SortType type = asc);
-  string toString(T *arr, const int length);
+  const T *sort(T *arr, const int length, SortType type = asc) const;
+  const string toString(T *arr, const int length) const;
 };
 
 template <typename T>
-T *BubbleSort<T>::sort(T *arr, const int length, SortType type) {
+const T *BubbleSort<T>::sort(T *arr, const int length, SortType type) const {
   for (int i = 0; i < length; i++) {
     for (int j = 0; j < length - i - 1; j++) {
       if (Sort<T>::compare(&arr[j], &arr[j + 1])) {
@@ -27,6 +27,7 @@ T *BubbleSort<T>::sort(T *arr, const int length, SortType type) {
   return arr;
 }
 
-template <typename T> string BubbleSort<T>::toString(T *arr, const int length) {
+template <typename T>
+const string BubbleSort<T>::toString(T *arr, const int length) const {
   return Sort<T>::toString(arr, length);
 }

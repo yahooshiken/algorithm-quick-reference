@@ -1,3 +1,6 @@
+#ifndef _SORT_HPP_
+#define _SORT_HPP_
+
 #include <sstream>
 #include <string>
 
@@ -10,23 +13,26 @@ public:
   Sort(){};
   ~Sort(){};
 
-  void swap(T *x, T *y);
-  bool compare(T *x, T *y, SortType type = asc);
-  T *sort(T *arr, const int length, SortType type = asc);
-  string toString(T *arr, const int length);
+  const void swap(T *x, T *y) const;
+  const bool compare(T *x, T *y, SortType type = asc) const;
+  string const toString(T *arr, const int length) const;
+  virtual const T *sort(T *arr, const int length,
+                        SortType type = asc) const = 0;
 };
 
-template <typename T> void Sort<T>::swap(T *x, T *y) {
+template <typename T> const void Sort<T>::swap(T *x, T *y) const {
   T tmp = *x;
   *x = *y;
   *y = tmp;
 }
 
-template <typename T> bool Sort<T>::compare(T *x, T *y, SortType type) {
+template <typename T>
+const bool Sort<T>::compare(T *x, T *y, SortType type) const {
   return type == asc ? *x > *y : *x < *y;
 }
 
-template <typename T> string Sort<T>::toString(T *arr, const int length) {
+template <typename T>
+string const Sort<T>::toString(T *arr, const int length) const {
   stringstream ss;
 
   for (int i = 0; i < length; i++) {
@@ -35,3 +41,5 @@ template <typename T> string Sort<T>::toString(T *arr, const int length) {
 
   return ss.str();
 }
+
+#endif
