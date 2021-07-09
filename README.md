@@ -15,7 +15,7 @@
 |Bubble sort|✅|||||||||||
 |Selection sort|✅|||||||||||
 |Insertion sort|✅|||||||||||
-|Shell sort||||||||||||
+|Shell sort|✅|||||||||||
 |Quick sort||||||||||||
 |Merge sort||||||||||||
 |Heap sort||||||||||||
