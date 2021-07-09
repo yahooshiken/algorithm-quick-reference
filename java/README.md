@@ -1,7 +1,7 @@
 # Java
 
 <p align="center">
-<img width="80" src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'>
+<img width="80" src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg'>
 </p>
 
 

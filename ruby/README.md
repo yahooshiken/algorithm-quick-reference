@@ -1,7 +1,7 @@
 # Ruby
 
 <p align="center">
-<img width="80" src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg'>
+<img width="80" src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg'>
 </p>
 
 

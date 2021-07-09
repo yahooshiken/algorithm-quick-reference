@@ -1,7 +1,7 @@
 # Kotlin
 
 <p align="center">
-<img width="80" src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg'>
+<img width="80" src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original-wordmark.svg'>
 </p>
 
 ## Env
