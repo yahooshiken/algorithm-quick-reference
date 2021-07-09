@@ -11,6 +11,17 @@
 |Hash table|✅|||||||||||
 |Binary Search Tree|🚧|||||||||||
 |Graph|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|
+|***Sorting algorithm***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|
+|Bubble sort|✅|||||||||||
+|Selection sort||||||||||||
+|Insertion sort||||||||||||
+|Shell sort||||||||||||
+|Quick sort||||||||||||
+|Merge sort||||||||||||
+|Heap sort||||||||||||
+|Radix sort||||||||||||
+|Bin sort||||||||||||
+|Counting sort||||||||||||
 |***Graph algorithm***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|
 |DFS (Graph)|✅|✅|✅|||||||||
 |BFS (Graph)|✅|✅||||||||||
