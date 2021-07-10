@@ -14,7 +14,10 @@ public:
 
   BinaryTreeNode<T> *getLeft() { return left; };
   BinaryTreeNode<T> *getRight() { return right; };
+  void setLeft(BinaryTreeNode<T> *n) { left = n; };
+  void setRight(BinaryTreeNode<T> *n) { right = n; };
   T getValue() { return value; };
+  void setValue(T val) { value = val; };
 
   void add(T val);
   void inorder();

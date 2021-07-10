@@ -9,7 +9,7 @@
 |***Data structure***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|
 |Singly linked list|✅|||||||||||
 |Hash table|✅|||||||||||
-|Binary Search Tree|🚧|||||||||||
+|Binary Search Tree|✅|||||||||||
 |Graph|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|
 |***Sorting algorithm***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|
 |Bubble sort|✅|||||||||||
