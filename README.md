@@ -22,6 +22,10 @@
 |Radix sort||||||||||||
 |Bin sort||||||||||||
 |Counting sort||||||||||||
+|***String search algorithm***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|
+|Naive algorithm|✅|||||||||||
+|Knuth-Morris-Pratt's||||||||||||
+|Boyer-Moore's||||||||||||
 |***Graph algorithm***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|
 |DFS (Graph)|✅|✅|✅|||||||||
 |BFS (Graph)|✅|✅||||||||||
