@@ -17,7 +17,7 @@
 |Insertion sort|✅|||||||||||
 |Shell sort|✅|||||||||||
 |Quick sort|✅|||||||||||
-|Merge sort||||||||||||
+|Merge sort|✅|||||||||||
 |Heap sort||||||||||||
 |Radix sort||||||||||||
 |Bin sort||||||||||||
