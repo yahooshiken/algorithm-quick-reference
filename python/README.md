@@ -14,5 +14,9 @@ $ pip install pipenv
 $ pipenv
 ```
 
+```
+$ pytest
+```
+
 ## Coding style
 - [PEP 8 -- Style Guide for Python Code | Python.org](https://www.python.org/dev/peps/pep-0008/)
