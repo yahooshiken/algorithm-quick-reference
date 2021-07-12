@@ -13,7 +13,7 @@
 |Graph|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|
 |***Sorting algorithm***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|
 |Bubble sort|✅||✅|||||||||
-|Selection sort|✅|||||||||||
+|Selection sort|✅||✅|||||||||
 |Insertion sort|✅||✅|||||||||
 |Shell sort|✅|||||||||||
 |Quick sort|✅|||||||||||
