@@ -16,6 +16,8 @@ $ pipenv
 
 ```
 $ pytest
+
+$ pytest -s
 ```
 
 ## Coding style
