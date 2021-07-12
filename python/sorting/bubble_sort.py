@@ -1,15 +1,7 @@
-from enum import Enum
+from .sort import SortType, Sort
 
 
-class SortType(Enum):
-    asc = "asc"
-    desc = "desc"
-
-
-class BubbleSort:
-    def compare(self, x, y, type):
-        return x > y if type == SortType.asc else x < y
-
+class BubbleSort(Sort):
     def sort(self, arr, type=SortType.asc):
         length = len(arr)
 

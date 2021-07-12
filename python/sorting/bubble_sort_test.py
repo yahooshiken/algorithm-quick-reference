@@ -1,4 +1,6 @@
-from .bubble_sort import BubbleSort, SortType
+from .sort import SortType
+from .bubble_sort import BubbleSort
+from .perf_measurer import PerfMeasurer
 
 
 def test_bubble_sort():
@@ -11,3 +13,6 @@ def test_bubble_sort():
     sorter.sort(arr, SortType.desc)
     expected_desc = [78, 76, 67, 45, 34, 32]
     assert arr == expected_desc
+
+    perfMeasurer = PerfMeasurer(sorter)
+    print(perfMeasurer.reportPerf())
