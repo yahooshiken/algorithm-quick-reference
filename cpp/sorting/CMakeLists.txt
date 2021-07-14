@@ -7,3 +7,5 @@ add_executable(testing_insertion_sort insertion_sort.test.cpp)
 add_executable(testing_shell_sort shell_sort.test.cpp)
 add_executable(testing_quick_sort quick_sort.test.cpp)
 add_executable(testing_merge_sort merge_sort.test.cpp)
+add_executable(testing_heap_sort heap_sort.test.cpp)
+
