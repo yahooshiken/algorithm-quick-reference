@@ -9,7 +9,7 @@ class PerfMeasurer:
         self.sorter = sorter
 
     def reportPerf(self) -> str:
-        sizes = [100, 200, 500, 1000, 2000, 5000]
+        sizes = [100, 200, 500, 1000, 2000, 5000, 10000]
 
         report = ""
 
