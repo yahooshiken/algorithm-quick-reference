@@ -1,5 +1,7 @@
 # algorithm-quick-reference
 
+A collection of algorithms written in a wide variety of programming languages.
+
 ## Implementation Status
 
 ✅ : Done, 🚧 : WIP
@@ -13,10 +15,10 @@
 |Graph|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|
 |***Sorting algorithm***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|
 |Bubble sort|✅||✅||✅|||||||
-|Selection sort|✅||✅|||||||||
-|Insertion sort|✅||✅|||||||||
-|Shell sort|✅||✅|||||||||
-|Quick sort|✅|||||||||||
+|Selection sort|✅||✅||✅|||||||
+|Insertion sort|✅||✅||✅|||||||
+|Shell sort|✅||✅||✅|||||||
+|Quick sort|✅||||✅|||||||
 |Merge sort|✅|||||||||||
 |Heap sort||||||||||||
 |Radix sort||||||||||||
