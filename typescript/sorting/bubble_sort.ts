@@ -1,7 +1,7 @@
-import Sort, { SortType } from "./sort.ts";
+import Sort, { SortType, SORT_TYPE } from "./sort.ts";
 
 class BubbleSort extends Sort {
-  sort(arr: number[], type: SortType): number[] {
+  sort(arr: number[], type: SortType = SORT_TYPE.asc): number[] {
     const length: number = arr.length;
 
     for (let i = 0; i < length; i++) {

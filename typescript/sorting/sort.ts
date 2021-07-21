@@ -14,7 +14,7 @@ abstract class Sort implements ISort {
   public compare(x: number, y: number, type: SortType): boolean {
     return type === SORT_TYPE.asc ? x > y : x < y;
   }
-  abstract sort(arr: number[], type: SortType): number[];
+  abstract sort(arr: number[], type?: SortType): number[];
 }
 
 export default Sort;
