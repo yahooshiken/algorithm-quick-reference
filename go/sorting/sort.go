@@ -9,5 +9,12 @@ const (
 
 type Sorter interface {
 	Sort(arr []int, sortType SortType) []int
-	Compare(x int, y int, sortType SortType) bool
+}
+
+func Compare(x int, y int, sortType SortType) bool {
+	if sortType == "asc" {
+		return x > y
+	} else {
+		return x < y
+	}
 }
