@@ -3,7 +3,7 @@ package sorting
 type InsertionSort struct {
 }
 
-func (b InsertionSort) Sort(arr []int, sortType SortType) []int {
+func (i InsertionSort) Sort(arr []int, sortType SortType) []int {
 	length := len(arr)
 
 	for i := 0; i < length; i++ {
