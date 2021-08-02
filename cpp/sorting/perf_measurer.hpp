@@ -29,13 +29,14 @@ template <typename T> string PerfMeasurer<T>::reportPerf() {
     iota(v.begin(), v.end(), 0);
     shuffle(v.begin(), v.end(), default_random_engine(seed));
 
-    chrono::time_point<chrono::high_resolution_clock> start =
-        chrono::high_resolution_clock::now();
-
     int arr[size];
     for (int i = 0; i < size; i++) {
       arr[i] = v[i];
     }
+
+    chrono::time_point<chrono::high_resolution_clock> start =
+        chrono::high_resolution_clock::now();
+
     sorter->sort(arr, size);
 
     chrono::time_point<chrono::high_resolution_clock> end =
