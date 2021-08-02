@@ -11,13 +11,16 @@ int main() {
   const int length = sizeof(arr) / sizeof(*arr);
   QuickSort<int> *quickSort = new QuickSort<int>();
 
-  cout << "Before: " << quickSort->toString(arr, length) << endl;
   quickSort->sort(arr, length);
-  cout << "After: " << quickSort->toString(arr, length) << endl;
-
-  int expected[] = {32, 34, 45, 67, 76, 78};
+  int expectedAsc[] = {32, 34, 45, 67, 76, 78};
   for (int i = 0; i < length; i++) {
-    assert(arr[i] == expected[i]);
+    assert(arr[i] == expectedAsc[i]);
+  }
+
+  quickSort->sort(arr, length, desc);
+  int expectedDesc[] = {78, 76, 67, 45, 34, 32};
+  for (int i = 0; i < length; i++) {
+    assert(arr[i] == expectedDesc[i]);
   }
 
   PerfMeasurer<int> *perfMeasurer =
