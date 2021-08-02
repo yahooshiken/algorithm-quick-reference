@@ -12,6 +12,10 @@ Deno.test("Quick sort", () => {
   const expectedAsc: number[] = [32, 34, 45, 67, 76, 78];
   assertEquals(sortedAsc, expectedAsc);
 
+  const sortedDesc: number[] = sorter.sort(arr, SORT_TYPE.desc);
+  const expectedDesc: number[] = [78, 76, 67, 45, 34, 32];
+  assertEquals(sortedDesc, expectedDesc);
+
   const perfMeasurer = new PerfMeasurer(sorter);
   console.log(perfMeasurer.reportPerf());
 });
