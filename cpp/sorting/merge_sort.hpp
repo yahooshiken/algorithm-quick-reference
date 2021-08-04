@@ -10,7 +10,8 @@ using namespace std;
 template <typename T> class MergeSort : public Sort<T> {
 private:
   mutable T *workArr;
-  const T *mergeSort(T *arr, const int low, const int high) const;
+  const T *mergeSort(T *arr, const int low, const int high,
+                     SortType type) const;
   const void newWorkArr(int length) const { workArr = new T[length]; };
   const void freeWorkArr() const { delete[] workArr; };
 
@@ -23,15 +24,16 @@ public:
 };
 
 template <typename T>
-const T *MergeSort<T>::mergeSort(T *arr, const int low, const int high) const {
+const T *MergeSort<T>::mergeSort(T *arr, const int low, const int high,
+                                 SortType type) const {
   if (low >= high) {
     return arr;
   }
 
   int middle = (low + high) / 2;
 
-  mergeSort(arr, low, middle);
-  mergeSort(arr, middle + 1, high);
+  mergeSort(arr, low, middle, type);
+  mergeSort(arr, middle + 1, high, type);
 
   for (int i = low; i <= middle; i++) {
     workArr[i] = arr[i];
@@ -43,7 +45,7 @@ const T *MergeSort<T>::mergeSort(T *arr, const int low, const int high) const {
 
   int i = low, j = high;
   for (int k = low; k <= high; k++) {
-    if (workArr[i] <= workArr[j]) {
+    if (Sort<T>::compare(&workArr[j], &workArr[i], type)) {
       arr[k] = workArr[i++];
     } else {
       arr[k] = workArr[j--];
@@ -56,7 +58,7 @@ const T *MergeSort<T>::mergeSort(T *arr, const int low, const int high) const {
 template <typename T>
 const T *MergeSort<T>::sort(T *arr, const int length, SortType type) const {
   newWorkArr(length);
-  mergeSort(arr, 0, length - 1);
+  mergeSort(arr, 0, length - 1, type);
   freeWorkArr();
 
   return arr;

@@ -11,13 +11,16 @@ int main() {
   const int length = sizeof(arr) / sizeof(*arr);
   MergeSort<int> *mergeSort = new MergeSort<int>();
 
-  cout << "Before: " << mergeSort->toString(arr, length) << endl;
   mergeSort->sort(arr, length);
-  cout << "After: " << mergeSort->toString(arr, length) << endl << endl;
-
-  int expected[] = {32, 34, 45, 67, 76, 78};
+  int expectedAsc[] = {32, 34, 45, 67, 76, 78};
   for (int i = 0; i < length; i++) {
-    assert(arr[i] == expected[i]);
+    assert(arr[i] == expectedAsc[i]);
+  }
+
+  mergeSort->sort(arr, length, desc);
+  int expectedDesc[] = {78, 76, 67, 45, 34, 32};
+  for (int i = 0; i < length; i++) {
+    assert(arr[i] == expectedDesc[i]);
   }
 
   PerfMeasurer<int> *perfMeasurer =
