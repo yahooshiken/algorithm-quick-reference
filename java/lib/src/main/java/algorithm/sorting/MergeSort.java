@@ -7,15 +7,15 @@ public class MergeSort extends Sort {
     workArr = new int[length];
   }
 
-  private int[] mergeSort(int[] arr, int low, int high) {
+  private int[] mergeSort(int[] arr, int low, int high, SortType type) {
     if (low >= high) {
       return arr;
     }
 
     int middle = (low + high) / 2;
 
-    mergeSort(arr, low, middle);
-    mergeSort(arr, middle + 1, high);
+    mergeSort(arr, low, middle, type);
+    mergeSort(arr, middle + 1, high, type);
 
     for (int i = low; i <= middle; i++) {
       workArr[i] = arr[i];
@@ -27,7 +27,7 @@ public class MergeSort extends Sort {
 
     int i = low, j = high;
     for (int k = low; k <= high; k++) {
-      if (workArr[i] <= workArr[j]) {
+      if (super.compare(workArr[j], workArr[i], type)) {
         arr[k] = workArr[i++];
       } else {
         arr[k] = workArr[j--];
@@ -40,6 +40,6 @@ public class MergeSort extends Sort {
   protected int[] sort(int[] arr, SortType type) {
     int length = arr.length;
     setWorkArr(length);
-    return mergeSort(arr, 0, length - 1);
+    return mergeSort(arr, 0, length - 1, type);
   }
 }
