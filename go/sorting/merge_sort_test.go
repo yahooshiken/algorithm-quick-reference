@@ -15,6 +15,10 @@ func TestMergeSort(t *testing.T) {
 	expected_asc := []int{32, 34, 45, 67, 76, 78}
 	assert.Equal(t, expected_asc, sorted_asc)
 
+	sorted_desc := sorter.Sort(arr, "desc")
+	expected_desc := []int{78, 76, 67, 45, 34, 32}
+	assert.Equal(t, expected_desc, sorted_desc)
+
 	perfMeasurer := PerfMeasurer{sorter: sorter}
 	fmt.Println(perfMeasurer.ReportPerf())
 

@@ -7,18 +7,18 @@ type MergeSort struct {
 func (m MergeSort) Sort(arr []int, sortType SortType) []int {
 	length := len(arr)
 	m.workArr = make([]int, length)
-	return m.MergeSort(arr, 0, length-1)
+	return m.MergeSort(arr, 0, length-1, sortType)
 }
 
-func (m MergeSort) MergeSort(arr []int, low int, high int) []int {
+func (m MergeSort) MergeSort(arr []int, low int, high int, sortType SortType) []int {
 	if low >= high {
 		return arr
 	}
 
 	middle := (low + high) / 2
 
-	m.MergeSort(arr, low, middle)
-	m.MergeSort(arr, middle+1, high)
+	m.MergeSort(arr, low, middle, sortType)
+	m.MergeSort(arr, middle+1, high, sortType)
 
 	for i := low; i <= middle; i++ {
 		m.workArr[i] = arr[i]
@@ -34,7 +34,7 @@ func (m MergeSort) MergeSort(arr []int, low int, high int) []int {
 	j = high
 
 	for k := low; k <= high; k++ {
-		if m.workArr[i] < m.workArr[j] {
+		if Compare(m.workArr[j], m.workArr[i], sortType) {
 			arr[k] = m.workArr[i]
 			i++
 		} else {
