@@ -1,4 +1,5 @@
 .DS_Store
+.gradle
 
 cpp/**/build/*
 
