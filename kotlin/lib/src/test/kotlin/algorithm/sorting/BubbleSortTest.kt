@@ -9,12 +9,15 @@ class BubbleSortTest {
     val arr = arrayOf(76, 34, 67, 32, 78, 45)
     val sorter = BubbleSort()
 
-    val expected_asc = arrayOf(32, 34, 45, 67, 76, 78)
-    val sorted_asc = sorter.sort(arr)
-    assertEquals(expected_asc.toList(), sorted_asc.toList())
+    val expectedAsc = arrayOf(32, 34, 45, 67, 76, 78)
+    val sortedAsc = sorter.sort(arr)
+    assertEquals(expectedAsc.toList(), sortedAsc.toList())
 
-    val expected_desc = arrayOf(78, 76, 67, 45, 34, 32)
-    val sorted_desc = sorter.sort(arr, SortType.desc)
-    assertEquals(expected_desc.toList(), sorted_desc.toList())
+    val expectedDesc = arrayOf(78, 76, 67, 45, 34, 32)
+    val sortedDesc = sorter.sort(arr, SortType.desc)
+    assertEquals(expectedDesc.toList(), sortedDesc.toList())
+
+    val perfMeasurer = PerfMeasurer(sorter)
+    println(perfMeasurer.reportPerf())
   }
 }
