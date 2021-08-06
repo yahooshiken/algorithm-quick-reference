@@ -1,4 +1,5 @@
 import 'package:algorithm/sorting/bubble_sort.dart';
+import 'package:algorithm/sorting/perf_measurer.dart';
 import 'package:algorithm/sorting/sort.dart';
 import 'package:test/test.dart';
 
@@ -15,5 +16,8 @@ void main() {
     final sortedDesc = sorter.sort(arr, type: SortType.desc);
     const expectedDesc = [78, 76, 67, 45, 34, 32];
     expect(sortedDesc, expectedDesc);
+
+    final perfMeasurer = PerfMeasurer(sorter);
+    print(perfMeasurer.reportPerf());
   });
 }
