@@ -14,5 +14,8 @@ class BubbleSortTest extends org.scalatest.funsuite.AnyFunSuite {
     val expectedDesc: Array[Int] = Array(78, 76, 67, 45, 34, 32)
     assert(sortedDesc.sameElements(expectedDesc))
 
+    val perfMeasurer = new PerfMeasurer(sorter)
+    Console.println(perfMeasurer.reportPerf())
+
   }
 }

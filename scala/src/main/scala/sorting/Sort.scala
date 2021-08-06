@@ -5,7 +5,7 @@ case object Asc extends SortType
 case object Desc extends SortType
 
 abstract class Sort() {
-  def sort(arr: Array[Int], sortType: SortType): Array[Int]
+  def sort(arr: Array[Int], sortType: SortType = Asc): Array[Int]
 
   def swap(arr: Array[Int], index1: Int, index2: Int): Unit = {
     val tmp = arr(index1)

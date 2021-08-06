@@ -1,7 +1,7 @@
 package sorting
 
 class BubbleSort() extends Sort {
-  def sort(arr: Array[Int], sortType: SortType = Asc): Array[Int] = {
+  def sort(arr: Array[Int], sortType: SortType): Array[Int] = {
     val length: Int = arr.length
 
     for (i <- Range(0, length, 1))
