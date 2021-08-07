@@ -19,7 +19,7 @@ A collection of algorithms written in a wide variety of programming languages.
 |Insertion sort|✅|✅|✅||✅|||✅||||
 |Shell sort|✅|✅|✅||✅|||✅||||
 |Quick sort|✅|✅|✅||✅|||✅||||
-|Merge sort|✅||✅||✅|||✅||||
+|Merge sort|✅|✅|✅||✅|||✅||||
 |Heap sort||||||||||||
 |Radix sort||||||||||||
 |Bin sort||||||||||||

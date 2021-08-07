@@ -20,7 +20,7 @@ class PerfMeasurer {
   public reportPerf(): string {
     const sizes: number[] = [100, 200, 500, 1000, 2000, 5000, 10000];
 
-    let str: string = "";
+    let str = "";
     for (const size of sizes) {
       const arr: number[] = [...Array(size).keys()];
       const shuffled: number[] = shuffleArr(arr);

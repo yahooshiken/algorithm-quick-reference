@@ -72,6 +72,8 @@
     "__functional_base_03": "cpp"
   },
   "deno.enable": true,
+  "deno.lint": true,
+  "deno.unstable": true,
   "python.pythonPath": "${workspaceRoot}/python/.venv/bin/python",
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
@@ -80,6 +82,5 @@
   "ruby.intellisense": "rubyLocate",
   "files.watcherExclude": {
     "**/target": true
-  },
-  "elixir.projectPath": "./elixir"
+  }
 }
