@@ -17,8 +17,8 @@ class PerfMeasurer {
       final stopwatch = Stopwatch();
       stopwatch.start();
       sorter.sort(arr);
-      str +=
-          'Time to sort an array of size $size is ${stopwatch.elapsed.toString()} sec\n';
+      final time = stopwatch.elapsed;
+      str += 'Time to sort an array of size $size is ${time.toString()} sec\n';
     }
 
     return str;
