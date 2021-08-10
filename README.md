@@ -2,7 +2,7 @@
 
 A collection of algorithms written in a wide variety of programming languages.
 
-## Implementation Status
+## 🚀 Implementation Status
 
 ✅ : Done, 🚧 : WIP
 
@@ -17,7 +17,7 @@ A collection of algorithms written in a wide variety of programming languages.
 |Bubble sort|✅|✅|✅||✅|✅|✅|✅||✅||
 |Selection sort|✅|✅|✅||✅|✅||✅||✅||
 |Insertion sort|✅|✅|✅||✅|||✅||✅||
-|Shell sort|✅|✅|✅||✅|||✅||||
+|Shell sort|✅|✅|✅||✅|||✅||✅||
 |Quick sort|✅|✅|✅||✅|||✅||||
 |Merge sort|✅|✅|✅||✅|||✅||||
 |Heap sort||||||||||||
