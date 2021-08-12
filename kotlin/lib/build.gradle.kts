@@ -6,6 +6,12 @@
  * User Manual available at https://docs.gradle.org/7.1/userguide/building_java_projects.html
  */
 
+tasks.withType<Test> {
+	testLogging {
+        showStandardStreams = true
+	}
+}
+
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     id("org.jetbrains.kotlin.jvm") version "1.4.31"
