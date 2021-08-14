@@ -37,3 +37,12 @@ A collection of algorithms written in a wide variety of programming languages.
 |Jarník-Prim's|✅|✅||||||||||
 |Kruskal's||||||||||||
 |Ford-Fullkerson's||||||||||||
+
+## 📝 Plan
+
+- Collections (List, HashMap, Set, ...)
+- Coding theory (Shannon-Fano coding, Huffman coding, ...)
+- Differential Equation (Euler's, Runge-Kutta's, ...)
+- Game tree (Minimax, Negamax, Alpha-beta, ...)
+- Linear programming (Simplex, Karmarkar's, ...)
+- Cryptography (RSA, ElGamal, ...)
