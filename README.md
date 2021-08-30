@@ -30,7 +30,7 @@ A collection of algorithms written in a wide variety of programming languages.
 |Boyer-Moore's|||||||||||||
 |***Graph algorithm***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|Clojure|
 |DFS (Graph)|✅|✅|✅||||||||||
-|BFS (Graph)|✅|✅|||||||||||
+|BFS (Graph)|✅|✅|✅||||||||||
 |Dijkstra's|✅|✅|||||||||||
 |Bellman-Ford's|||||||||||||
 |Warshall-Floyd's|||||||||||||
