@@ -7,7 +7,7 @@ class Graph {
 
   Graph(this.n, this.directed) : vertices = List<List<Pair>>.filled(n, []);
 
-  List<Pair> getVertices(int u, int v) {
+  List<Pair> getVertices(int u) {
     return vertices[u];
   }
 
