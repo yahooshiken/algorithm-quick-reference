@@ -1,8 +1,5 @@
-import 'dart:ffi';
-
 import 'graph.dart';
-
-enum Color { white, gray, black }
+import 'color.dart';
 
 void dfsVisit(Graph graph, int u, List<int> pred, List<Color> colors) {
   colors[u] = Color.gray;
