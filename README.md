@@ -10,6 +10,7 @@ A collection of algorithms written in a wide variety of programming languages.
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |***Data structure***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|Clojure|
 |Singly linked list|✅||||✅||||||||
+|Priority Queue|✅|✅||||||||✅|||
 |Hash table|✅||||||||||||
 |Binary Search Tree|✅||||||||||||
 |Graph|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅||
@@ -29,9 +30,9 @@ A collection of algorithms written in a wide variety of programming languages.
 |Knuth-Morris-Pratt's|||||||||||||
 |Boyer-Moore's|||||||||||||
 |***Graph algorithm***|C++|TypeScript|Python|Ruby|Java|Kotlin|Scala|Go|Rust|Dart|Crystal|Clojure|
-|DFS (Graph)|✅|✅|✅||✅||||||||
-|BFS (Graph)|✅|✅|✅||||||||||
-|Dijkstra's|✅|✅|||||||||||
+|DFS (Graph)|✅|✅|✅||✅|||||✅|||
+|BFS (Graph)|✅|✅|✅|||||||✅|||
+|Dijkstra's|✅|✅||||||||✅|||
 |Bellman-Ford's|||||||||||||
 |Warshall-Floyd's|||||||||||||
 |Jarník-Prim's|✅|✅|||||||||||
