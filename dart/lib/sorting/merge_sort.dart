@@ -1,7 +1,7 @@
 import 'package:algorithm/sorting/sort.dart';
 
 class MergeSort extends Sort {
-  List<int> workArr;
+  late List<int?> workArr;
 
   @override
   List<int> sort(List<int> arr, {SortType type = SortType.asc}) {
@@ -28,10 +28,10 @@ class MergeSort extends Sort {
 
     var i = low, j = high;
     for (var k = low; k <= high; k++) {
-      if (compare(workArr[j], workArr[i], type)) {
-        arr[k] = workArr[i++];
+      if (compare(workArr[j] as int, workArr[i] as int, type)) {
+        arr[k] = workArr[i++] as int;
       } else {
-        arr[k] = workArr[j--];
+        arr[k] = workArr[j--] as int;
       }
     }
 
